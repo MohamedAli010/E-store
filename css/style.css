@@ -1,0 +1,819 @@
+/* Start Genral Setting */
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Georgia, "Times New Roman", Times, serif}
+
+.unlist-style
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+:root
+{
+    --main-color:#FF6F61;
+    --second-color:black;
+}
+/* End Genral Setting */
+/* ---------------------
+
+/* Start header content */
+.header-content
+{
+    width:100%;
+    min-height: 100vh;
+} /* End header content */
+
+/* Start header nav */
+.header-nav
+{
+    width: 100%;
+    min-height:35px;
+    background-color: var(--main-color);
+    display: flex;
+    padding: 10px 10px;
+    /* position: fixed; */
+    /* z-index: 2; */
+
+} /* End header nav */
+
+/* Start left-list */
+.left-list
+{
+    width:85%;
+}
+.left-list ul 
+{
+    display: none;
+}
+
+.left-list input:checked ~ ul /*-------- Input For Checked On ul -------------*/
+{
+    display: block;
+}
+
+.left-list input
+{
+    display: none;
+}
+
+.left-list input:checked ~ label /*-------- Input For Checked On label-------------*/
+{
+    display: block;
+    background-image: url('../icons/cancel.png');
+}
+
+.left-list ul li
+{
+    display: inline-block;
+    padding-left: 45px;
+    
+}
+
+.left-list ul li a
+{
+    color:#fff;
+    font-size:16px;
+    line-height: 21px;    
+    text-transform: uppercase;
+}
+
+.left-list ul li a i
+{
+    margin:5px;
+}
+.left-list ul li .active  
+{
+    color:#222;
+}
+
+.left-list ul li:hover a
+{
+    color: #222;
+    transition: color .3s ease-in;
+}
+
+.left-list label /* ---------- Label ---------------*/
+{
+    display: block;
+    width:50px;
+    height:50px;
+    background-image: url('../icons/menu.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* ---------------- End left-list ------------------ */
+
+/* ---------------- User Account ------------------- */
+.user-account
+{
+    width:15%;
+    position: relative;
+    line-height: 25px;
+}
+
+.user-account ul li a
+{
+    color:#222;
+    font-size: 16px;
+
+}
+
+.user-account ul ul 
+{
+    position: absolute;
+    right: 15px;
+    background-color: #FF6F61;
+    min-width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+    display: none;
+
+}
+
+.user-account ul ul li
+{
+    margin-bottom: 10px;
+
+}
+.user-account ul ul li a
+{
+    font-size: 17.5px;
+    color:#222;
+    height:30px;
+}
+
+.user-account ul li:hover ul
+{
+    display: block;
+}
+
+.user-account ul ul li:hover a
+{
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+/* ---------------- End User Account ------------------ */ 
+
+/* ---------------- start header main ------------------ */
+.header-main
+{
+    width:100%;
+    min-height:60px;
+    padding:10px 50px;
+    /* padding-top:65px ; */
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    flex-basis:25%;
+}
+
+.logo img
+{
+    width:180px;
+    cursor: pointer;
+}
+
+.search
+{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.search input
+{
+    width:85%;
+    height:40px;
+    padding: 12px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+.search button 
+{
+    position: absolute;
+    top: 1px;
+    right: 96px;
+    width: 41px;
+    height: 38px;
+    border-radius: 3px;
+    background: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search button:hover
+{
+    background-color: var(--main-color);
+    transition: background-color .2s ease-in-out;
+}
+
+.fav-cart
+{
+    flex-basis: 25%;
+}
+
+.fav-cart i
+{
+    float: right;
+    margin-right:28px;
+    border: 1px solid var(--main-color);
+    padding:10px 18px;
+    color:var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fav-cart i:hover{
+    background-color: var(--main-color);
+    color:#fff;
+    transition:background-color .2s ease-in-out; 
+}
+/* ---------------- End header main ------------------ */
+
+/* ----------------header container ------------------*/
+.header-container
+{
+    width:92.5%;
+    min-height:80vh;
+    background-color: #ccc;
+    padding:20px 50px;
+    background-image: url('../image/011.jpg');
+    background-size: cover;
+    margin:12px auto;
+}
+
+/* container text */
+.container-text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(180px);
+}
+
+.container-text p
+{
+    color:#fff;
+    font-size:42px;
+    font-weight:bold;
+    line-height:1.3;
+}
+
+.container-text span
+{
+    font-size: 25px;
+    color:#ff3f34;
+    font-weight:bold;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+/* ---------------- End container ------------------*/
+
+/* ---------------- Start about content ------------ */
+
+.about-content
+{
+    width:92.5%;
+    margin:12px auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height:63vh;
+    padding:0 20px;
+    background-color:#fafcff;
+    box-shadow: 4px 4px 15px #ccc;
+
+}
+
+.about-text{  
+    margin-top:35px;
+}
+
+.about-header
+{
+    margin-bottom: 25px;
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+
+.about-text-items{ 
+    color:var(--second-color);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about-btn
+{
+    width:125px;
+    height:45px;
+    line-height: 45px;
+    background-color: #FF6F61;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 35px;
+    font-size:18px;
+    margin-bottom:35px;
+    border-radius: 15px;
+    
+}
+
+.about-btn:hover
+{
+    background-color: #ff3e2c;
+    transition: background-color .3s ease-in-out;
+}
+
+.ground
+{
+    width:100%;
+    height:100%;
+    background-color: var(--second-color);
+}
+
+.about-img
+{
+    background-image: url('../image/teamwork.jpg');
+    height:75%;
+    margin-top:35px;
+    margin-bottom:35px;
+    background-size: cover;
+}
+/* ---------------- End about content ------------ */
+
+/* ---------------- product section --------------*/
+/* ---------------- Start product header ----------*/
+.product-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    font-size: 30px;
+}
+.product-header span
+{
+    color:#ff3e2c;
+    border-bottom: 1px solid black;
+}
+
+/* ------product content --------*/
+.product-content
+{
+    width:92.5%;
+    margin:12px auto;
+    margin-top:20px;
+    display: flex;
+    position: relative;
+}
+/* ------product box --------*/
+.product-box 
+{
+    margin-top:80px;
+    flex-basis: 25%;
+    height:60vh;
+    border: 1px solid rgb(161, 161, 161);
+    margin-left:20px;
+}
+
+.drop-1
+{
+    width:70px;
+    height:40px;
+    background-color: red;
+    position: absolute;
+    top:80px;
+    left:277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+
+.drop-2
+{
+    width:70px;
+    height:40px;
+    background-color: blue;
+    position: absolute;
+    top:80px;
+    right:693px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+.drop-3
+{
+    width:70px;
+    height:40px;
+    background-color: green;
+    position: absolute;
+    top:80px;
+    right:347px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+.drop-4
+{
+    width:70px;
+    height:40px;
+    background-color: rgb(255, 7, 123);
+    position: absolute;
+    top:80px;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+
+/* ------product img --------*/
+
+.product-box img
+{
+    width:100%;
+    height:40vh;
+    
+}
+
+.box-header
+{
+    margin-top:15px;
+    margin-left:10px;
+    color:gray;
+    font-weight: bold;
+}
+
+.box-content
+{
+    position: relative;
+}
+.box-content span   /* Span For Sallary */
+{
+    display: inline-block;
+    margin-left:10px;
+    margin-top:15px;
+    font-size:20px;
+    font-weight: bold;
+    color:#ff3e2c
+}
+
+.box-content .discount   /* Span For Discount */
+{
+    color:black;
+    display: inline-block;
+    margin-left:20px ;
+    font-size:18px;
+}
+
+.box-btn  /* Boutton Buy Now */
+{
+    width:90px;
+    height:35px;
+    background-color: #ff4f3e;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 5px;
+    top:30px;
+    cursor: pointer;
+}
+
+.box-btn:hover
+{
+    background-color: #f81500;
+    transition: background-color .3s ease-in-out;
+}
+.rate /* Rate For Our Products */
+{
+    margin-left:10px;
+    margin-top:15px;
+    color:#ccc;
+}
+/* ---------------- End product header ---------------*/
+
+/* ---------------- Start test content ---------------*/
+.test-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.test-content
+{
+    width:92.5%;
+    /* margin:150px 50px 20px 20px; */
+    margin:50px auto;
+    padding:10px 50px;
+    display: flex;
+    justify-content: center;
+    height:50vh;
+}
+
+.test-box-1, .test-box-2, .test-box-3
+{
+    flex-basis:25%;
+    height:40vh;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #fff;
+    position: relative;
+    background-color: #ff796d;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+
+.test-box-1 p, .test-box-2 p, .test-box-3 p
+{
+    text-align: center;
+    margin-top:100px;
+    color:#fff;
+    line-height: 1.4;
+}
+
+.test-box-1 .pirson
+{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-image: url('../images/person\ 1.png');
+    background-size: cover;
+    position: absolute;
+    bottom: -15%;
+    left:110px;
+}
+
+.test-box-2 .pirson
+{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-image: url('../images/person\ 3.png');
+    background-size: cover;
+    position: absolute;
+    bottom: -15%;
+    left:110px;
+}
+
+.test-box-3 .pirson
+{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-image: url('../images/person\ 2.png');
+    background-size: cover;
+    position: absolute;
+    bottom: -15%;
+    left:110px;
+}
+
+/* ---------------- End test content ---------------*/
+
+/* ---------------- Start Call Us ---------------*/
+.call-us
+{
+    width:100%;
+    height:25vh;
+    background-color: #FF6F61;
+    padding: 40px 30px; 
+}
+
+.call-us .call-us-left
+{
+    margin-top:50px;
+    margin-left: 20px;
+    font-size:35px;
+    color:#222;
+    text-align: left;
+}
+
+.call-us .call-us-right
+{
+    text-align: right;
+    margin-top:-45px;
+    font-size:37px;
+    margin-right: 20px;
+    color:#fff;
+}
+
+.call-us .call-us-right i
+{
+    margin-right: 10px;
+}
+
+/* Contact */
+.contact
+{
+    margin-top: 50px;
+    padding: 0 50px;
+    width:100%;
+    height:85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-contact
+{
+    width:100%;
+    height:23%;
+    background-color: #fa655d;
+    text-align:center;
+}
+
+.text-contact:hover{
+    background-color:#fd1105;
+    transition: all .4s ease-in-out;
+}
+.text-contact h3{
+    margin:20px 0px;
+    font-size:30px;
+}
+
+.text-contact p
+{
+    font-size:18px;
+    line-height: 1.5;
+    color:#fff;
+
+}
+
+.contact-form
+{
+    width:100%;
+    height:70%;
+    display: flex;
+}
+
+/* Left Col */
+.left-col
+{
+    flex-basis:65%;
+    background-color: #fff;
+    padding:50px;
+}
+
+.left-col input 
+{
+    margin-left: 20px;
+    width: 44%;
+    height: 49px;
+    padding: 23px;
+    border-radius: 30px;
+    outline: none;
+    font-size:19px;
+    color:#7777;
+    border: 1px solid #ff3f34;
+    margin-bottom: 50px;
+}
+.textarea{
+    font-family: inherit;
+    font-size: 100%;
+    height:170px;
+    line-height: 1.15;
+    margin-left: 23px;
+    width: 91%;
+    padding: 14px;
+    font-size: 20px;
+    color: #7777;
+    outline: #ff3f34;
+    border-radius: 20px;
+    border:1px solid #ff3f34;
+}
+
+.btn
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn{
+    width: 40%;
+    margin: 27px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fa655d;
+    color:#222;
+    outline: none;
+    border:none;
+}
+
+.contact-btn:hover
+{
+    background-color: #fd1e12;
+    transition: all .3s ease-in-out;
+    color:#fff;
+}
+
+/* Right Col */
+.right-col
+{
+    background-color:#FA655D;
+    flex-basis:35%;
+    padding:100px 30px;
+    font-size:19px;
+}
+.right-col:hover{
+    background-color:#fd1105;
+    transition: all .4s ease-in-out;
+}
+.info-1
+{
+    display: inline-block;
+    margin-right:15px;
+    margin-bottom: 40px;
+}
+
+.info-2
+{
+    display: inline-block;
+    margin-right:15px;
+    color:#fff
+}
+/* ---------------- End Call Us ---------------*/
+
+/* ---------------- Start Icon -----------------*/
+.icon
+{
+    width:100%;
+    height:15%;
+    background-color: #485460;
+    text-align:center;
+}
+
+.icon button 
+{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin:5px 0px;
+}
+
+.icon button  i 
+{
+    font-size: 25px;
+}
+
+.icon button:hover
+{
+    transform: scale(1.1);
+    background-color: black;
+    color:#fff;
+    transition: all .3s ease-in-out;
+}
+/* ---------------- End Icon -----------------*/
+
+/* ---------------- Start Copy -------------- */
+.copy
+{
+    width:100%;
+    height:15%;
+    background: #2d3436;
+    text-align: center;
+    padding:10px;
+}
+
+.copy p 
+{
+    font-size:19px;
+    color:#fff;
+}
+/* ---------------- End Copy -------------- */

@@ -1,0 +1,255 @@
+/* ---------------Media ------------- */
+
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+/* ---------------- Header-Nav ---------------------*/
+@media (max-width:992px){
+    .left-list    /* lift list */
+    {
+        width:60%;
+    }
+
+    .left-list ul li
+    {
+        display: block;
+        margin-left:-40px;
+    }
+
+    .user-account   /* user account */
+    {
+        width:50%;
+    }
+    .user-account ul{
+        text-align: right;
+    }
+
+    .user-account ul ul
+    {
+        padding-top:10px;
+        text-align: left;
+    }
+
+}
+
+@media (min-width:992px){
+    .left-list label{
+        display: none;
+    }
+    .left-list ul {
+        display: inline-block;
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/* ---------------- header-main --------------------*/
+@media (max-width:992px)
+{
+    .header-main 
+    {
+        display: block;
+    }
+    .logo 
+    {
+        width:100%;
+        margin-bottom:15px;
+        text-align: center;
+    }
+
+    .search input
+    {
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    .search button
+    {
+        right:0px;
+    }
+
+    .fav-cart 
+    {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+/*-------------- header-container ------------------*/
+@media (max-width:992px)
+{
+    .header-container
+    {
+        width:100%;
+        min-height:100vh;
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/*----------------------about ---------------------*/
+@media (max-width:992px){
+    .about-content{
+        grid-template-columns: repeat(1,100%);
+        height:120vh;
+    }
+
+    .about-img
+    {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        height:40vh;
+    }
+
+    .about-btn
+    {
+        margin-bottom: 0px;
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/*---------------- product-header -----------------*/
+@media (max-width:992px){
+    .product-header
+    {
+        width:100%;
+    }
+    
+    .product-content
+    {
+        display: block;
+        width: 70%;
+    }
+    
+    .drop-1, .drop-2, .drop-3, .drop-4
+    {
+        display: none;
+    }
+
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/*----------------- testmonials -------------------*/
+@media (max-width:992px){
+    .test-header
+    {
+        width:100%;
+    }
+
+    .test-content
+    {
+        display: block;
+    }
+    .test-box-1 p, .test-box-2 p, .test-box-3 p
+    {
+        text-align: center;
+        margin-top:100px;
+        color:#fff;
+        line-height: 1.4;
+    }
+
+    .test-box-1 .pirson
+    {
+        bottom: -15%;
+        left:133px;
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/*------------------ Call Us -----------------------*/
+@media (max-width:992px){
+    .call-us .call-us-left
+    {
+        margin-top:0px;
+        font-size:32px;
+        width:100%;
+        text-align: center;
+    }
+
+    .call-us .call-us-right
+    {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+/* Media For Mobile, Tablets[ 0px to 767px, 992px ] */
+
+/*--------------- Contact --------------------------*/
+@media (max-width:992px){
+    .contact
+    {
+        background-color: none;
+        height:185vh;
+    }
+    .text-contact
+    {
+        width:100%;
+        height:22%;
+    }
+    .contact-header
+    {
+        width:100%;
+    }
+    .text-contact p
+    {
+        width:100%;
+        color:#fff;
+        font-size:20xp;
+    }
+
+    .contact-form
+    {
+        display: block;
+    }
+
+    .left-col
+    {
+        flex-basis: 100%;
+        text-align: center;
+        
+    }
+    
+    .left-col input
+    {
+        width:100%;
+        margin-left: 0px;
+    }
+    .left-col textarea
+    {
+        width:100%;
+        margin-left: 0px;
+    }
+    .right-col
+    {
+        margin-top:30px;
+        height:42%;
+        padding:70px 30px;
+    }
+
+    .contact-btn
+    {
+        width:50%;
+        height:55px;
+
+    }
+    .address
+    {
+        font-size: 21px;
+    }
+    .info-1
+    {
+        margin-bottom: 0px;
+
+    }
+    .info-2
+    {
+        margin-bottom:40px;
+    }
+
+}
